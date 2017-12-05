@@ -37,7 +37,7 @@
             <?php } ?>
             </div>
             <img src="index.php?route=captcha/basic_captcha/captcha" class="pull-right"  alt="" style="margin-top:0px" />
-            
+             <span class="refresh-captcha" style="font-size:25px; padding-top:10px; cursor:pointer"><i class="fa fa-refresh" aria-hidden="true"></i></span>
             </div>
 
             </div>     
@@ -53,7 +53,7 @@
             <?php } ?>
             </div>
             <img src="index.php?route=captcha/basic_captcha/captcha" class="pull-right"  alt="" style="margin-top:0px"  />
-            
+             <span class="refresh-captcha" style="font-size:25px; padding-top:10px; cursor:pointer"><i class="fa fa-refresh" aria-hidden="true"></i></span>
             </div>
 
             </div>     
@@ -69,7 +69,7 @@
             <?php } ?>
             </div>
             <img src="index.php?route=captcha/basic_captcha/captcha" class="pull-right"  alt="" style="margin-top:0px" />
-            
+             <span class="refresh-captcha" style="font-size:25px; padding-top:10px; cursor:pointer"><i class="fa fa-refresh" aria-hidden="true"></i></span>
             </div>
         
         <?PHP
@@ -85,12 +85,14 @@
     <label class="control-label" for="input-payment-captcha"><?php echo $entry_captcha; ?></label>
     <input type="text" name="captcha" id="input-payment-captcha"   class="form-control" autocomplete="off" value="" placeholder="Captcha" />
     <img src="index.php?route=extension/captcha/basic_captcha/captcha" alt="" style="margin-top:3px" />
+     <span class="refresh-captcha" style="font-size:25px; padding-top:10px; cursor:pointer"><i class="fa fa-refresh" aria-hidden="true"></i></span>
     <?php } else {
   ?>
     <!--<label class="col-sm-2 control-label" for="input-captcha"><?php echo $entry_captcha; ?></label>-->
     <div class="col-sm-12 ">
       <div class="col-sm-8  "> <input type="text" name="captcha" id="input-captcha" class="form-control" placeholder="Captcha" /></div>
       <img src="index.php?route=captcha/basic_captcha/captcha"  alt="" style="margin-top:0px" />
+       <span class="refresh-captcha" style="font-size:25px; padding-top:10px; cursor:pointer"><i class="fa fa-refresh" aria-hidden="true"></i></span>
       <?php if ($error_captcha) { ?>
       <div class="text-danger"><?php echo $error_captcha; ?></div>
       <?php } ?>

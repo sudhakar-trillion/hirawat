@@ -149,6 +149,15 @@ Please donate via PayPal to donate@opencart.com
 </body></html>
 <script>
 
+$(document).on('click','.refresh-captcha',function()
+{
+
+	$(this).prev().attr('src','index.php?route=captcha/basic_captcha/captcha');
+	$("#input-captcha").val('').focus();
+	
+});
+
+
 $(window).load(function()
 {
 	$(".free-ship-anchor").removeAttr('href');
